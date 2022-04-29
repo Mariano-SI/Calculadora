@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora</title>
+</head>
+<body>
+    <div class="corpo">
+        <h1 id="titulo">Calculadora</h1>
+        <p id="resultado"></p>
+        <table>
+            <tr class="linhas">
+                <td class="pontaLeft"><button onclick="clean()">C</button></td>
+                <td><button onclick="del()"><</button ></td>
+                <td><button onclick="insira('/')">/</button ></td>
+                <td class="pontaRight"><button onclick="insira('*')">X</button></td>
+            </tr>
+            <tr class="linhas">
+                <td class="pontaLeft"><button onclick="insira('7')">7</button></td>
+                <td><button onclick="insira('8')">8</button ></td>
+                <td><button onclick="insira('9')">9</button ></td>
+                <td class="pontaRight"><button onclick="insira('-')">-</button></td>
+            </tr>
+            <tr class="linhas">
+                <td class="pontaLeft"><button onclick="insira('4')">4</button></td>
+                <td><button onclick="insira('5')">5</button></td>
+                <td><button onclick="insira('6')">6</button></td>
+                <td class="pontaRight"><button onclick="insira('+')">+</button></td>
+            </tr>
+            <tr class="linhas">
+                <td class="pontaLeft"><button onclick="insira('1')">1</button></td>
+                <td><button onclick="insira('2')">2</button></td>
+                <td><button onclick="insira('3')">3</button></td>
+                <td class="pontaRight" rowspan="2"><button onclick="result()" >=</button></td>
+            <tr class="linhas" id="ultima">
+                <td class="pontaLeft" colspan="2"><button style="width: 120px;" onclick="insira('0')">0</button></td>
+                <td class="pontaRight"><button onclick="insira('.')">.</button></td>
+            </tr>    
+            </tr>
+        </table>
+    </div>
+
+
+
+
+    <script src="main.js"></script>
+</body>
+</html>
